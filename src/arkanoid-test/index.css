@@ -1,0 +1,52 @@
+html,
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	--button-size: 100px;
+}
+
+.app {
+	position: relative;
+	width: 1024px;
+	height: 573px;
+	margin: 0 auto;
+	background-color: red;
+}
+
+.game-container {
+	width: 100%;
+}
+
+.ui-container {
+	z-index: 1;
+}
+
+.button-play,
+.button-stop {
+	position: absolute;
+	top: calc(573px / 2 - (var(--button-size) / 2));
+	left: calc(850px - var(--button-size) - 20px);
+	fill: red;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: column;
+}
+
+.button-title {
+	position: absolute;
+	top: 55px;
+	left: 30px;
+	color: white;
+}
+
+.button-stop {
+	display: none;
+}
+
+.button-icon {
+	width: var(--button-size);
+	height: var(--button-size);
+}
